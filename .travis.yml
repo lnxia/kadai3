@@ -1,4 +1,3 @@
-language: generic
+language: bash
 script:
-  - bash -e ./16745201.sh
-
+  - bash ./16745201.sh
