@@ -1,3 +1,3 @@
 language: bash
 script:
-  - bash ./16745201.sh
+  - ./16745201.sh
