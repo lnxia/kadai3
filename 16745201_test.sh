@@ -36,14 +36,10 @@ fi
 if [[ $1 =~ ^[0-9]*[1-9][0-9]*$ && $2 =~ ^[0-9]*[1-9][0-9]*$ && $3 =~ ^[0-9]*[1-9][0-9]*$ ]]; then
     echo "GCD of $1 and $2 = $3" > $tmp-ans
 else
-    echo $(date "+%Y-%m-%d") "引数は正整数を入力してください。"
-    exit $IJYOU_CODE
+    echo "$3" > $tmp-ans
 fi
 
 ./16745201.sh $1 $2 > $tmp-out
-
-#cat $tmp-ans
-#cat $tmp-out
 
 diff $tmp-ans $tmp-out > /dev/null
 
