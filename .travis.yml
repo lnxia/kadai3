@@ -1,4 +1,4 @@
-nguage: bash
+language: bash
 script:
   - ./16745201.sh
   - ./16745201_test.sh
