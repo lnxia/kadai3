@@ -14,7 +14,7 @@ if [[ $1 =~ ^[0-9]*[1-9][0-9]*$  && $2 =~ ^[0-9]*[1-9][0-9]*$ ]];
 then :
 else
     echo "引数は正整数を入力してください。"
-    exit 0
+    exit $E_BADARGS
 fi
 
 function  gcd()
